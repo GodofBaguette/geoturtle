@@ -1,0 +1,14 @@
+#map{
+    height: 600px;
+    width: 900px;
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body{
+    background-color: #06080E;
+    color: white;
+}

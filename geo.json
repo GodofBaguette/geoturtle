@@ -1,0 +1,212 @@
+[
+    {
+      "id_club": 8353,
+      "id_dojo": 9220,
+      "titre": "Dojo (A) GYMNASE CHARLES PEGUY",
+      "adresse": "RUE ALEXANDRE DUMAS",
+      "cp": "01000",
+      "ville": "BOURG EN BRESSE",
+      "lon":"5.2309939",
+      "lat":"46.2121214"
+    },
+    {
+      "id_club": 8353,
+      "id_dojo": 9221,
+      "titre": "Dojo (B) SALLE SPORTS DU BUGEY - ECOLE MUNICIPALE",
+      "adresse": "RUE DU BUGEY",
+      "cp": "01320",
+      "ville": "CHALAMONT",
+      "lon":"5.1785238",
+      "lat":"45.9938245"
+    },
+    {
+      "id_club": 8353,
+      "id_dojo": 9222,
+      "titre": "Dojo (C) GYMNASE DE LA CROIX BLANCHE",
+      "adresse": "RUE DES DIMES",
+      "cp": "01000",
+      "ville": "BOURG EN BRESSE",
+      "lon":"5.2372274",
+      "lat":"46.2054463"
+    },
+    {
+      "id_club": 8899,
+      "id_dojo": 2350,
+      "titre": "Dojo (A) COSEC CLAUDIUS FAVIER",
+      "adresse": "1 RUE DU DOCTEUR DUBY",
+      "cp": "01000",
+      "ville": "BOURG EN BRESSE",
+      "lon":"5.2273679",
+      "lat":"46.2122987"
+    },
+    {
+      "id_club": 8899,
+      "id_dojo": 2351,
+      "titre": "Dojo (B) GYMNASE DE ST ROCH",
+      "adresse": "rue Charles Demia",
+      "cp": "01000",
+      "ville": "BOURG EN BRESSE",
+      "lon":"5.2297337",
+      "lat":"46.1944517"
+    },
+    {
+      "id_club": 4312,
+      "id_dojo": 6859,
+      "titre": "Dojo (A) JUDO CLUB THILLOIS THIL",
+      "adresse": "3 BIS IMPASSE JEAN JAURES",
+      "cp": "54880",
+      "ville": "THIL",
+      "lon":"5.9083438",
+      "lat":"49.4729888"
+    },
+    {
+      "id_club": 9213,
+      "id_dojo": 7873,
+      "titre": "Dojo (B) LEO LAGRANGE",
+      "adresse": "16 rue de l'orne",
+      "cp": "54320",
+      "ville": "MAXEVILLE",
+      "lon":"6.1252965",
+      "lat":"48.7001629"
+    },
+    {
+      "id_club": 10287,
+      "id_dojo": 9446,
+      "titre": "Dojo (D) ALLIANCE JUDO TOULOIS - MJC",
+      "adresse": "RUE DU LIEUTENANT CLERC",
+      "cp": "54112",
+      "ville": "ALLAMPS",
+      "lon":"5.8064118",
+      "lat":"48.5458777"
+    },
+    {
+      "id_club": 4280,
+      "id_dojo": 5418,
+      "titre": "Dojo (A) MAISON DES ASSOCIATIONS",
+      "adresse": "02 RUE DU PUISAT",
+      "cp": "54113",
+      "ville": "BLENOD LES TOUL",
+      "lon":"5.8756",
+      "lat":"48.6187"
+    },
+    {
+      "id_club": 4373,
+      "id_dojo": 1485,
+      "titre": "Dojo (A) CLAUDE MAS",
+      "adresse": "RUE DU STADE",
+      "cp": "54114",
+      "ville": "JEANDELAINCOURT",
+      "lon":"6.2526048",
+      "lat":"48.8457374"
+    },
+    {
+      "id_club": 9220,
+      "id_dojo": 3050,
+      "titre": "Dojo (C) SALLE DE JUDO",
+      "adresse": "CENTRE CULTUREL ET SPORTIF",
+      "cp": "14410",
+      "ville": "VASSY",
+      "lon":"-0.8025",
+      "lat":"48.8671"
+    },
+    {
+      "id_club": 9220,
+      "id_dojo": 3051,
+      "titre": "Dojo (D) SALLE DE L ELAN",
+      "adresse": "6 RUE DE L'AUNAY",
+      "cp": "61800",
+      "ville": "SOURDEVAL",
+      "lon":"-0.9218721",
+      "lat":"48.7274701"
+    },
+    {
+      "id_club": 258,
+      "id_dojo": 4785,
+      "titre": "Dojo (A) DOJO Muncipal",
+      "adresse": "STADE LEO LAGRANGE",
+      "cp": "62122",
+      "ville": "LAPUGNOY",
+      "lon":"2.5256664",
+      "lat":"50.5138172"
+    },
+    {
+      "id_club": 229,
+      "id_dojo": 2083,
+      "titre": "Dojo (A) SALLE DES FETES",
+      "adresse": "GRANDE PLACE",
+      "cp": "62128",
+      "ville": "CROISILLES",
+      "lon":"1.5128257",
+      "lat":"48.6855822"
+    },
+    {
+      "id_club": 267,
+      "id_dojo": 402,
+      "titre": "Dojo (B) GONNEHEM",
+      "adresse": "135 RUE DES PRES",
+      "cp": "62920",
+      "ville": "GONNEHEM",
+      "lon":"2.5714411",
+      "lat":"50.5575642"
+    },
+    {
+      "id_club": 267,
+      "id_dojo": 403,
+      "titre": "Dojo (C) GUARBECQUE - SALLE DES ASSOCIATIONS",
+      "adresse": "RUE DU PETIT CARLUY",
+      "cp": "62330",
+      "ville": "GUARBECQUE",
+      "lon":"2.4861992",
+      "lat":"50.6085413"
+    },
+    {
+      "id_club": 267,
+      "id_dojo": 404,
+      "titre": "Dojo (D) SAILLY SUR LA LYS",
+      "adresse": "RUE DE LA BRIQUETTERIE",
+      "cp": "62840",
+      "ville": "SAILLY SUR LYS",
+      "lon":"4.84671",
+      "lat":"45.74846"
+    },
+    {
+      "id_club": 267,
+      "id_dojo": 405,
+      "titre": "Dojo (E) ESSARS - SALLE DES SPORTS",
+      "adresse": "RUE DU 8 MAI",
+      "cp": "62400",
+      "ville": "ESSARS",
+      "lon":"2.660201",
+      "lat":"50.5498449"
+    },
+    {
+      "id_club": 267,
+      "id_dojo": 406,
+      "titre": "Dojo (F) ANNEZIN - SALLE ROQUELAURE DOJO",
+      "adresse": "AVENUE DE VERDUN",
+      "cp": "62232",
+      "ville": "ANNEZIN",
+      "lon":"2.6185528",
+      "lat":"50.5342512"
+    },
+    {
+      "id_club": 7055,
+      "id_dojo": 5387,
+      "titre": "Dojo (A) GLACIERE GYMNASE",
+      "adresse": "88 RUE DE LA GLACIERE",
+      "cp": "75013",
+      "ville": "PARIS",
+      "lon":"2.3435444",
+      "lat":"48.830006"
+    },
+    {
+      "id_club": 11270,
+      "id_dojo": 9286,
+      "titre": "Dojo (A) JUDO CLUB  DOJO MEYTHET - SALLE LE METEORE",
+      "adresse": "27 ROUTE DE FRANGY",
+      "cp": "74960",
+      "ville": "MEYTHET",
+      "lon":"6.0894108",
+      "lat":"45.9183016"
+    }
+]
