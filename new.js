@@ -15,6 +15,15 @@ window.onload = () => {
 //event pour la barre de recherche et la géolocalisation
     document.querySelector("#ville").addEventListener("blur", getCity)
     document.querySelector('#find-me').addEventListener('click', geoFindMe)
+
+// modification de l'icone et de l'emplacement du popup    
+    var myIcon = L.icon({
+        iconUrl: "images/autre.png",
+        iconSize: [50, 50],
+        iconAnchor: [25, 50],
+        popupAnchor: [-3, -76],
+    })
+    
 // on initialise la requete ajax
     var xobj = new XMLHttpRequest()
     var datas
@@ -47,20 +56,23 @@ window.onload = () => {
                 el.appendChild(buttonDojo)
                 el.appendChild(document.createElement("br"))
                 el.appendChild(document.createElement("br"))
+                   
 
-            // modification de l'icone et de l'emplacement du popup    
-                var myIcon = L.icon({
-                    iconUrl: "images/autre.png",
-                    iconSize: [50, 50],
-                    iconAnchor: [25, 50],
-                    popupAnchor: [-3, -76],
-                })
             // ajout des markers , cluster et on choisi ce que l'on met dans les popup
                 var marker = L.marker([lat,lon], { icon: myIcon })
+                    //changement de couleur du dojo en cliquant sur le marker qui lui correspond                    
+                        marker.on('click', function() {
+                            if (buttonDojo.className =='btn btn-dark'){
+                                buttonDojo.className ='btn btn-light'
+                            }else{
+                                buttonDojo.className ='btn btn-dark'
+                            }
+                        })
+                                      
                     marker.bindPopup(titre + " " + "<br>" + adresse + "<br>" + `<a href="#">Site Web</a>`)
-                    markerClusters.addLayer(marker)
+                    markerClusters.addLayer(marker) 
             }
-            mymap.addLayer(markerClusters)
+            mymap.addLayer(markerClusters)            
         }
     }
     xobj.send(null)
@@ -117,10 +129,4 @@ function geoFindMe() {
         navigator.geolocation.getCurrentPosition(success, error)
     }
 }
-
-
-
-
-
-
 
