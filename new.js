@@ -1,9 +1,10 @@
-
+// on initialise les variable pour la carte et les clusters
 let mymap
 var markerClusters
 
 
 window.onload = () => {
+//on charge la carte et on la fait ce centrer sur paris par défault grace à openstreetmap
     mymap = L.map("map").setView([48.852969, 2.349903], 5)
     markerClusters = L.markerClusterGroup()
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -11,9 +12,10 @@ window.onload = () => {
         minZoom: 1,
         maxZoom: 20
     }).addTo(mymap);
+//event pour la barre de recherche et la géolocalisation
     document.querySelector("#ville").addEventListener("blur", getCity)
     document.querySelector('#find-me').addEventListener('click', geoFindMe)
-
+// on initialise la requete ajax
     var xobj = new XMLHttpRequest()
     var datas
     xobj.overrideMimeType("application")
@@ -25,22 +27,35 @@ window.onload = () => {
             datas = JSON.parse(xobj.response)
             for (data in datas) {
                 let alldata = datas[data]
+                let id_dojo = alldata["id_dojo"]
                 let lon = alldata["lon"]
                 let lat = alldata["lat"]
                 let pos = [lat, lon]
                 let titre = alldata["titre"]
                 let adresse = alldata["adresse"] + ", " + alldata["cp"] + " " + alldata["ville"]
-
+            // affichage de tous les dojos dans une liste
                 let el = document.querySelector("#dojo")
-                el.innerHTML = el.innerHTML+ `<button id="find-dojo" type="button" class="btn btn-dark">` + titre + `</button>` +'</br>'+'</br>'
-                el.onclick = mymap.setView(pos, 18)
-                
+                let buttonDojo = document.createElement('button')
+                buttonDojo.id = 'dojo-'+ id_dojo.toString()
+                buttonDojo.className ='btn btn-dark'
+                buttonDojo.setAttribute('type', 'button')
+                buttonDojo.innerHTML = titre
+            // event qui va zommer sur le dojo sur lequel on clique
+                buttonDojo.onclick = function(){
+                    mymap.setView(pos, 15)
+                }
+                el.appendChild(buttonDojo)
+                el.appendChild(document.createElement("br"))
+                el.appendChild(document.createElement("br"))
+
+            // modification de l'icone et de l'emplacement du popup    
                 var myIcon = L.icon({
                     iconUrl: "images/autre.png",
                     iconSize: [50, 50],
                     iconAnchor: [25, 50],
                     popupAnchor: [-3, -76],
                 })
+            // ajout des markers , cluster et on choisi ce que l'on met dans les popup
                 var marker = L.marker([lat,lon], { icon: myIcon })
                     marker.bindPopup(titre + " " + "<br>" + adresse + "<br>" + `<a href="#">Site Web</a>`)
                     markerClusters.addLayer(marker)
@@ -51,6 +66,7 @@ window.onload = () => {
     xobj.send(null)
 }
 
+// fonction qui récupère et zoom sur la ville choist en passant par l'api nominatim
 function getCity(){
 
     let adresse = document.querySelector("#ville").value
@@ -78,6 +94,7 @@ function getCity(){
     xmlhttp.send()
 }
 
+// syteme de géolocalisation et gestion des erreurs
 function geoFindMe() {
 
     function success(position) {
@@ -100,15 +117,6 @@ function geoFindMe() {
         navigator.geolocation.getCurrentPosition(success, error)
     }
 }
-
-
-
-
-// function addMarker(pos){
-
-//     var marqueur = L.marker(pos)
-//     marqueur.addTo(mymap);
-// }
 
 
 
